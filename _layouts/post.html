@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  {{ content }}
+  <!-- JiaThis Button BEGIN -->
+  <div class="jiathis_style">
+    <a class="jiathis_button_fb"></a>
+    <a class="jiathis_button_linkedin"></a>
+    <a class="jiathis_button_tumblr"></a>
+    <a class="jiathis_button_douban"></a>
+    <a class="jiathis_button_googleplus"></a>
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_msn"></a>
+    <a class="jiathis_button_renren"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_google"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_copy"></a>
+    <a class="jiathis_button_print"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">更多</a>
+  </div>
+  <br>
+  <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=" charset="utf-8"></script>
+  <!-- JiaThis Button END -->
+  <nav class="pagination-link">
+    {% if page.previous %}
+    <a class="prev pure-button pure-button-active" href="{{ site.url }}{{ page.previous.url }}" rel="bookmark">&laquo;&nbsp;{{ page.previous.title | truncatewords:5 }}</a>
+    {% endif %}
+    {% if page.next %}
+    <a class="next pure-button pure-button-active" href="{{ site.url }}{{ page.next.url }}" rel="bookmark">{{ page.next.title | truncatewords:5 }}&nbsp;&raquo;</a>
+    {% endif %}
+  </nav>
+  <br>
+</article>
