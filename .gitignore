@@ -1,0 +1,13 @@
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+
+# OS X
+.DS_Store
+
+# Backup
+*~
+
+# Jekyll
+/_site/
