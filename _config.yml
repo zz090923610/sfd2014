@@ -1,11 +1,11 @@
-baseurl: /sfd2014
+baseurl:
 
 markdown:         rdiscount
 pygments:         true
 paginate:         4
 
 title:            QDLUG | CoYouth Club | Lazywrt Org
-url:              http://sfd.lazywrt.org
+url:
 
 indexContent:     true
 
